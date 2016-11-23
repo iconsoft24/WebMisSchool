@@ -36,12 +36,6 @@
               
                 <asp:TemplateField>
      
-                    <ItemTemplate>
-
-                    </ItemTemplate>
-                    <EditItemTemplate>
-
-                    </EditItemTemplate>
                 </asp:TemplateField>
 
             </Columns>
