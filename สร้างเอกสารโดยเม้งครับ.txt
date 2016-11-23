@@ -2,4 +2,8 @@
 12345
 =======
 abcd
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Soda_Fon
+=======
+>>>>>>> refs/remotes/origin/Meng
+>>>>>>> origin/master
