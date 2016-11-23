@@ -1,0 +1,83 @@
+﻿'========== Patten สำหรับบันทึกข้อมูล ---------------------------
+
+'Dim strconn As String = modconn.strconn
+'Dim cn As New SqlConnection(strconn)
+'Dim strSql As String = "Update Products SET productName = @p1, 
+'UnitPrice =@p2 Where productid = @p3"
+
+'Dim cmd As New SqlCommand(strSql, cn)
+
+'cmd.Parameters.AddWithValue("@p1", txtProductName.Text)
+'cmd.Parameters.AddWithValue("@p2", CDbl(txtUnitPrice.Text))
+'cmd.Parameters.AddWithValue("@p3", CInt(ddProduct.SelectedValue))
+
+'Try
+'    cn.Open()
+'    cmd.ExecuteNonQuery()
+'    cn.Close()
+'    Person1 = "<span class='info'> Update Successfully </span>"
+'Catch ex As Exception
+'    Person1 = "<span class='error1'>" & ex.Message & "</span>"
+'End Try
+
+'========== Patten การอ้าง Control ใน MasterPage ---------------------------
+
+	Dim M1 As MISMain = Me.Master
+	Dim lbl As Label = M1.FindControl("lblUserName")
+
+'=================================================================
+-การ add Row ใหม่ใน Datatable 
+dim DT as datatable = M1.GetdataTable("Select ")
+dim dr as Datarow = Dt.Newrow
+dr!No = "0"
+dr!Name = "[ALL]"
+dt.rows.insertat(0)
+
+-การ add Col ใหม่ใน Datatable 
+dim DT as datatable = M1.GetdataTable("Select ")
+DT.Columns.Add("Amount",GetType(Double),"Unitprice * UnitInStock")
+
+
+'===================Grid View==============================================
+<EmptyDataTemplate> คือถ้าหากไม่มีข้อมูลแล้วจะให้แสดงคำว่า อะไร --
+
+-การกำหนด Column เอง ให้กำหนด AutoGenerateColumns="False"
+- ถ้าต้องการแสดงทศนิยม 2 ตำแหน่ง กำหนด Dataformatstring เป็น {0:n2} และกำหนด HtmlEncode = False ด้วย
+
+
+- การกำหนดให้ แก้ไขข้อมูลได้ ให้กำหนด AutoGenerateEditButton = True ตัวนี้ Edit จะอยุ่ข้างหน้า
+เขียนที่ Event RowEditing
+
+GV1.EditIndex = e.newEditIndex '//-- แถวแรกเริ่มจาก 0 เสมอ
+
+- RowDataBound '//-- ขณะทำการ Fill ข้อมูลเข้า Grid
+
+If e.Row.Rowstate and DataControlRowState.Edit then '//-- เป็นการเช็คสภาวะ ว่า อยุ่ในสภาวะ Edit เหรอเปล่า
+
+End if
+
+- การ Bound ข้อมูลเข้าไปใน DropDownList  ที่อยู่ใน GridView และตรวจสอบ Rowstate
+If e.Row.RowState and DataControlRowState.Edit then '//--สาเหตุที่ใช้ And เพราะ สภาวะของแถวมี แถวคู่ แถวคี่ และ แก้ไข การใช้ and จะได้ แถวคู่แก้ไข และ แถวคี่แก้ไข
+ Dim d1 as DropDownlist = e.Row.Cell(3).FindControl("dd3")
+  
+End if
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

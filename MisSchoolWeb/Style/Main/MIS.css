@@ -1,0 +1,30 @@
+﻿body {
+    padding:0;
+    margin:0 ;
+}
+
+body,input{
+    font-family:Tahoma,thonburi;
+    font-size:13px;
+}
+
+.ui-widget {
+    width: 100%;
+}
+
+.ui.datepicker{ width :200px; }
+.ui-datepicker-calendar th span {font-size :0.8em;font-weight:normal;}
+
+.error1 {color:red;
+         padding: 20px;
+}
+
+.m1 {  
+    border-bottom:dashed 2px #2A2E5E;
+    padding:5px;
+
+}
+
+.panel-title {
+    background-color:#2A2E5E;
+}

@@ -1,0 +1,317 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MisSchoolWeb
+</name>
+</assembly>
+<members>
+<member name="T:MisSchoolWeb.Resources.rsMain">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.checkUser">
+<summary>
+  Looks up a localized string similar to SELECT u.UserName AS [iUser] ,U.[Password],IsNull(th.Fname,&apos;&apos;) + &apos; &apos; + IsNull(th.Lname,&apos;&apos;) AS UserName,
+IsNull(tp.PrefixNameFull,&apos;&apos;) + IsNull(th.Fname,&apos;&apos;) + &apos; &apos; + IsNull(th.Lname,&apos;&apos;) AS UserNameFull,
+u.TeacherNo
+FROM  Personal.dbo.tblUserName AS U
+LEFT JOIN Personal.dbo.tblTeacherHis AS TH ON u.TeacherNo = th.TeacherNo
+LEFT JOIN BaseData.dbo.tblPrefix AS tp ON th.PrefixNo = tp.PrefixNo
+WHERE [username] = &apos;{0}&apos; AND U.[Password] = &apos;{1}&apos;.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.strConn">
+<summary>
+  Looks up a localized string similar to Data Source=.\sqlexpress;Initial Catalog=Tabain;Persist Security Info=True;User ID=sa;Password=mengae.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.Student">
+<summary>
+  Looks up a localized string similar to SELECT tsr.No_Room,tsr.StdNo,  ts.Fname , ts.Lname 
+FROM Tabain.dbo.tblStudentRoom AS tsr
+LEFT JOIN Tabain.dbo.tblStudentNumber SN ON tsr.StdNo = sn.StdNo
+LEFT JOIN Tabain.dbo.tblStudent AS ts ON sn.StdNoRef = ts.StdNoRef
+LEFT JOIN BaseData.dbo.tblPrefix AS tp ON ts.PreFixNo = tp.PrefixNo
+WHERE tsr.LavelNo + tsr.DepartNo + tsr.RoundNo + tsr.[Year] + tsr.Room = &apos;{0}&apos;
+  Order BY No_Room,tsr.StdNo.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.StudentDel">
+<summary>
+  Looks up a localized string similar to DELETE 
+FROM Tabain.dbo.tblStudent
+WHERE stdnoref IN (SELECT StdNoRef FROM Tabain.dbo.tblStudentNumber AS tsn WHERE stdno = @p1 ).
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.StudentRoom">
+<summary>
+  Looks up a localized string similar to SELECT tsr.No_Room,tsr.StdNo,  tp.PrefixNameFull + ts.Fname + &apos; &apos; + ts.Lname AS StdName
+,tp.PrefixNameFullEng + ts.FNameEng + &apos; &apos; + ts.LNameEng AS StdNameEng
+FROM Tabain.dbo.tblStudentRoom AS tsr
+LEFT JOIN Tabain.dbo.tblStudentNumber SN ON tsr.StdNo = sn.StdNo
+LEFT JOIN Tabain.dbo.tblStudent AS ts ON sn.StdNoRef = ts.StdNoRef
+LEFT JOIN BaseData.dbo.tblPrefix AS tp ON ts.PreFixNo = tp.PrefixNo
+WHERE tsr.LavelNo + tsr.DepartNo + tsr.RoundNo + tsr.[Year] + tsr.Room = &apos;{0}&apos;
+  Order BY No_Room,tsr.StdNo.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.StudentUpdate">
+<summary>
+  Looks up a localized string similar to Update Tabain.Dbo.tblStudent 
+SET Fname = @p1, Lname = @p2 
+From _Tabain.Dbo.tblStudent TS
+LEFT JOIN _Tabain.Dbo.tblStudentNumber TN ON TS.StdNoRef = TN.StdNoRef Where TN.StdNo = @p3.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.tblDepart">
+<summary>
+  Looks up a localized string similar to SELECT DepartName,tl.DepartNamefull 
+FROM BaseData.dbo.tblDepart AS tl
+WHERE tl.DepartNo = &apos;{0}&apos;.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.tblLavel">
+<summary>
+  Looks up a localized string similar to SELECT LavelName,LavelNameFull
+FROM BaseData.dbo.tblLavel AS tl
+WHERE tl.LavelNo = &apos;{0}&apos;.
+</summary>
+</member>
+<member name="P:MisSchoolWeb.Resources.rsMain.tblRound">
+<summary>
+  Looks up a localized string similar to SELECT RoundName
+FROM BaseData.dbo.tblRound AS tl
+WHERE tl.RoundNo = &apos;{0}&apos;.
+</summary>
+</member>
+<member name="F:MisSchoolWeb.Home._lblShow">
+<summary>
+lblShow control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._txtusername">
+<summary>
+txtusername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._txtPassword">
+<summary>
+txtPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.index._cmdLogin">
+<summary>
+cmdLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._picTeacher">
+<summary>
+picTeacher control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._lblUserName">
+<summary>
+lblUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._CB">
+<summary>
+CB control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.notLogin._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebForm1._GV1">
+<summary>
+GV1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebShowStudent._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebShowStudent._lblClassName">
+<summary>
+lblClassName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebShowStudent._GV1">
+<summary>
+GV1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebShowStudent._cmdShow">
+<summary>
+cmdShow control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.WebShowStudent._lblShow">
+<summary>
+lblShow control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
