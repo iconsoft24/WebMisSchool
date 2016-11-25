@@ -14,11 +14,47 @@ Option Explicit On
 Partial Public Class Home
     
     '''<summary>
-    '''lblShow control.
+    '''focusedInput control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblShow As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents focusedInput As Global.System.Web.UI.HtmlControls.HtmlInputText
+    
+    '''<summary>
+    '''Text2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Text2 As Global.System.Web.UI.HtmlControls.HtmlInputText
+    
+    '''<summary>
+    '''Text3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Text3 As Global.System.Web.UI.HtmlControls.HtmlInputText
+    
+    '''<summary>
+    '''Text5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Text5 As Global.System.Web.UI.HtmlControls.HtmlInputText
+    
+    '''<summary>
+    '''disabledInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents disabledInput As Global.System.Web.UI.HtmlControls.HtmlInputText
 End Class

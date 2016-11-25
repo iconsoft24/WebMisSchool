@@ -13,14 +13,12 @@
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
      
     <style>
-
+        .error1 {color:red;
+         padding: 20px;
+}
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
       .row.content {height:auto;}
     }
     </style>  
@@ -32,23 +30,23 @@
         <nav class=" navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     <%--         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
+              </button>--%>
               <a class="navbar-brand" href="#">Logo</a>
 
             </div>
           </div>
         </nav>
   
-<div class="container-fluid text-center" ">
+<div class="container-fluid text-center"" >
   <div class="row content">
     <div class="col-sm-12 text-left" >
          <div class="row">
             <!-- Sign In form -->
-      <div class="col-md-4 col-md-offset-4" style="margin-top: 3%;">
+      <div class="col-md-4 col-md-offset-4 " style="margin-top: 3%;">
       <div class="login-panel panel panel-primary">
           <div class="panel-heading" >
               <h3 class="panel-title">MIS-SCHOOL</h3>
@@ -74,7 +72,7 @@
                           </div>
                           <div><asp:Button  class="btn btn-md btn-primary btn-block" style="background-color:#2A2E5E;"  ID="cmdLogin" runat="server" Text="ตกลง" /></div>
                   </fieldset>
-             
+                    
           </div>
       </div>
       </div>
