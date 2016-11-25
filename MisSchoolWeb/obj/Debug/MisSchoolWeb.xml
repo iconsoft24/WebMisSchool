@@ -178,24 +178,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.MISMain._picTeacher">
-<summary>
-picTeacher control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:MisSchoolWeb.MISMain._lblUserName">
-<summary>
-lblUserName control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:MisSchoolWeb.MISMain._CB">
 <summary>
 CB control.

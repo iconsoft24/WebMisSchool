@@ -9,35 +9,11 @@
     <script src="/Scripts/jquery-1.10.2.min.js"></script>
     <script src="/Scripts/jquery-ui.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
-    <link href="/Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
-    <link href="/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
      
     <style>
 
-         /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-     background-color: #2A2E5E;
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #dfe4fe;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #2A2E5E;
-      color: white;
-      padding: 15px;
-    }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
@@ -53,7 +29,7 @@
     <form id="form1" runat="server">
     <div>
        
-        <nav class="navbar navbar-inverse">
+        <nav class=" navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -72,9 +48,9 @@
     <div class="col-sm-12 text-left" >
          <div class="row">
             <!-- Sign In form -->
-      <div class="col-md-3 col-md-offset-4" style="margin-top: 3%;">
+      <div class="col-md-4 col-md-offset-4" style="margin-top: 3%;">
       <div class="login-panel panel panel-primary">
-          <div class="panel-heading" style="background-color:#2A2E5E;">
+          <div class="panel-heading" >
               <h3 class="panel-title">MIS-SCHOOL</h3>
           </div>
            <div class="modal-body">

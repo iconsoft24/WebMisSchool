@@ -298,10 +298,12 @@
     <Content Include="Home.aspx" />
     <Content Include="index.aspx" />
     <Content Include="notLogin.aspx" />
-    <Content Include="Style\BJcss\bootstrap.css" />
-    <Content Include="Style\BJcss\bootstrap.min.css" />
-    <Content Include="Style\BJcss\jquery-ui.min.css" />
-    <Content Include="Style\Main\MIS.css" />
+    <Content Include="picTeacher\T45003.jpg" />
+    <Content Include="Scripts\Style\BJcss\bootstrap.css" />
+    <Content Include="Scripts\Style\BJcss\bootstrap.min.css" />
+    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\Style\BJcss\jquery-ui.min.css" />
+    <Content Include="Scripts\Style\Main\MIS.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="_Doc\_Doc.txt" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -353,6 +355,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.vbhtml" />
     <Content Include="Views\Shared\Lockout.vbhtml" />
     <Content Include="Views\Shared\_LoginPartial.vbhtml" />
+    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -389,7 +394,6 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="picTeacher\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
