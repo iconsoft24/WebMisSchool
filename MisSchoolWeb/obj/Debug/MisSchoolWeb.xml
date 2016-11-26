@@ -97,9 +97,45 @@ FROM BaseData.dbo.tblRound AS tl
 WHERE tl.RoundNo = &apos;{0}&apos;.
 </summary>
 </member>
-<member name="F:MisSchoolWeb.Home._lblShow">
+<member name="F:MisSchoolWeb.Home._focusedInput">
 <summary>
-lblShow control.
+focusedInput control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._Text2">
+<summary>
+Text2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._Text3">
+<summary>
+Text3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._Text5">
+<summary>
+Text5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._disabledInput">
+<summary>
+disabledInput control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -160,6 +196,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:MisSchoolWeb.index._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:MisSchoolWeb.MISMain._head">
 <summary>
 head control.
@@ -172,6 +217,60 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:MisSchoolWeb.MISMain._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._picTeacher">
+<summary>
+picTeacher control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._lblUserName">
+<summary>
+lblUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.MISMain._Label4">
+<summary>
+Label4 control.
 </summary>
 <remarks>
 Auto-generated field.

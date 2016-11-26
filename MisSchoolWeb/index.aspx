@@ -13,15 +13,21 @@
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
      
     <style>
-        .error1 {color:red;
-         padding: 20px;
-}
+    
+     .error1 {color:red; padding: 20px;}
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .row.content {height:auto;}
-    }
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+
+    .Noshow{visibility:hidden ; color:red; }
+    .show{visibility:visible; }
+
     </style>  
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -84,16 +90,14 @@
 
   </div>
 
-
-<footer class="container-fluid text-center">
-  <p>ออกแบบและพัฒนาระบบโดย</p>
-</footer>
+        
 
 
+            <footer class="container-fluid text-center">
+              <p>ออกแบบและพัฒนาระบบโดย</p>
+            </footer>
 
-
-
-    </div>
+        <asp:Label ID="Label1" runat="server" Text="ทดสอบ" CssClass="Noshow"></asp:Label> 
     </form>
 </body>
 </html>
