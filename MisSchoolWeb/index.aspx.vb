@@ -14,8 +14,16 @@ Public Class index
 
     Protected Sub cmdLogin_Click(sender As Object, e As EventArgs) Handles cmdLogin.Click
         Dim iUser As New clsUserInfo
+        Dim IP As String = Request.ServerVariables("Remote_Addr")
+        Dim url As String = Request.ServerVariables("URL")
+
         iUser.iUser = txtusername.Text
         iUser.iPassword = txtPassword.Text
+        iUser.IP = IP
+
+
+
+
 
         If iUser.CheckLogin Then
             Session("iUser") = iUser

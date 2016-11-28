@@ -3,13 +3,16 @@ Public Class clsMISSQL
     Dim PV As String = "Server=(local);uid=sa;pwd=mengae;"
     Dim m_Database As String = "Basedata"
     Public Strcon As String
+
     Public Sub New()
         Strcon = PV & "database=" & m_Database
     End Sub
+
     Public Sub New(ByVal DBName As String)
         m_Database = DBName
         Strcon = PV & "database=" & m_Database
     End Sub
+
     Public Property Database() As String
         Get
             Return m_Database

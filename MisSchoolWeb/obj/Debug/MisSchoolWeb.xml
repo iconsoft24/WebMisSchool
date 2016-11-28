@@ -97,6 +97,15 @@ FROM BaseData.dbo.tblRound AS tl
 WHERE tl.RoundNo = &apos;{0}&apos;.
 </summary>
 </member>
+<member name="F:MisSchoolWeb.frmReportTeach._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:MisSchoolWeb.Home._focusedInput">
 <summary>
 focusedInput control.
@@ -136,6 +145,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:MisSchoolWeb.Home._disabledInput">
 <summary>
 disabledInput control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._GV1">
+<summary>
+GV1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -241,18 +259,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.MISMain._Label1">
+<member name="F:MisSchoolWeb.MISMain._lblTimeIN">
 <summary>
-Label1 control.
+lblTimeIN control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.MISMain._Label2">
+<member name="F:MisSchoolWeb.MISMain._lblIP">
 <summary>
-Label2 control.
+lblIP control.
 </summary>
 <remarks>
 Auto-generated field.

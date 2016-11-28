@@ -5,18 +5,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="CB" runat="server">
 
-<div class="panel panel-info">
+    <div class="panel panel-info">
         <div class="panel-heading">
                 <h3 class="panel-title">ประวัติส่วนตัว</h3>
-         </div>
+        </div>
+
         <div class="panel-body">
            <div class="form-group">
                     <div class="row">
                         <div class="col-md-8"> 
-                  <label class="teacherhis" for="focusedInput">ชื่อ-สกุล</label></div>
+                            <label class="teacherhis" for="focusedInput">ชื่อ-สกุล</label></div>
                         <div class="col-md-4"> 
-                  <label class="control-label" for="focusedInput">ชื่อเล่น</label></div>
-                    </div>
+                            <label class="control-label" for="focusedInput">ชื่อเล่น</label></div>
+                        </div>
 
 
                    <div class="row ">
@@ -41,9 +42,6 @@
                         <div class="col-md-4"> 
                        <input class="form-control" id="Text5" type="text" value="NickName"  runat="server"></div>
                   </div>
-
-
-
                 </div>
 
                 <div class="form-group">
@@ -52,5 +50,36 @@
                 </div>
         </div>
     </div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+                <h3 class="panel-title">ข้อมูลการลงเวลา</h3>
+        </div>
+           <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <asp:GridView ID="GV1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                                <AlternatingRowStyle BackColor="White" />
+                                <Columns>
+                                    <asp:BoundField DataField="HisNo" HeaderText="เลขที่บันทึก" ReadOnly="true" />
+                                </Columns>
+
+                                <EditRowStyle BackColor="#2461BF" />
+                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#EFF3FB" />
+                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+
+                            </asp:GridView>
+                        </div>
+                     </div>
+            </div>
+    </div>
+
 
 </asp:Content>

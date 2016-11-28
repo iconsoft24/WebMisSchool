@@ -6,6 +6,8 @@ Public Class WebForm1
     Inherits System.Web.UI.Page
 
     Dim m As New clsMisClassName
+
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
@@ -18,7 +20,7 @@ Public Class WebForm1
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim M1 As New clsMISSQL(modConn.strCon)
+        Dim M1 As New MgData(modConn.strCon)
 
         Dim strsql As String = "Select Top 10 Fname From Tabain.dbo.tblStudent "
         Dim DT As DataTable = M1.GetDataTable(strsql)

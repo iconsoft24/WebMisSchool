@@ -9,6 +9,7 @@ Public Class clsUserInfo
     Dim m_TeacherNo As String
     Dim m_User As String
     Dim m_Password As String
+    Dim _IP As String
 
     Public FirstLogin As Date = Now
 
@@ -26,12 +27,15 @@ Public Class clsUserInfo
         End If
 
         Dim strSql As String = String.Format(Resources.rsMain.checkUser, m_User, m_Password)
-        Dim DA As New SqlDataAdapter(strSql, modConn.strCon)
-        Dim DT As New DataTable
-        DA.Fill(DT)
+        Dim M1 As New MgData(modConn.strCon)
+        Dim DT As DataTable = M1.GetDataTable(strSql)
 
-        'Dim misSql As New clsMISSQL
-        'Dim DT As DataTable = misSql.GetDataTable(strSql)
+        'Dim DA As New SqlDataAdapter(strSql, modConn.strCon)
+        'Dim DT As New DataTable
+        'DA.Fill(DT)
+
+        'Dim clsMgdata As New clsclsMgdata
+        'Dim DT As DataTable = clsMgdata.GetDataTable(strSql)
 
         If DT.Rows.Count > 0 Then
             Me.m_TeacherNo = DT(0)!TeacherNo
@@ -87,5 +91,13 @@ Public Class clsUserInfo
         End Set
     End Property
 
+    Public Property IP As String
+        Get
+            IP = _IP
+        End Get
+        Set(value As String)
+            _IP = value
+        End Set
+    End Property
 
 End Class

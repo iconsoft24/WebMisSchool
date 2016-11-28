@@ -58,7 +58,7 @@ Public Class clsMisClassName
         Dim strLavelName As String
         Dim strConn As String = modConn.strCon
 
-        Dim MisSql As New clsMISSQL(strConn)
+        Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
 
         strLavelName = ""
@@ -78,7 +78,7 @@ Public Class clsMisClassName
         Dim strDepartName As String
         Dim strConn As String = modConn.strCon
 
-        Dim MisSql As New clsMISSQL(strConn)
+        Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
 
         strDepartName = ""
@@ -94,7 +94,7 @@ Public Class clsMisClassName
         Dim strRoundName As String
         Dim strConn As String = modConn.strCon
 
-        Dim MisSql As New clsMISSQL(strConn)
+        Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
 
         strRoundName = ""

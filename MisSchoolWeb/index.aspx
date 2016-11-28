@@ -23,13 +23,9 @@
             }
         }
 
-    .Noshow{visibility:hidden; }
-        .show {
-            visibility: visible;
-        }
-    
+        .Noshow{visibility:hidden; }
+        .show {visibility: visible;}
 
-    
     </style>  
 
 </head>
@@ -81,20 +77,11 @@
                           </div>
                           <div><asp:Button  class="btn btn-md btn-primary btn-block" style="background-color:#2A2E5E;"  ID="cmdLogin" runat="server" Text="ตกลง" /></div>
                        <div style="text-align:center;"> 
-                           <i  class="glyphicon glyphicon-exclamation-sign" style="color:#b94a48; "></i> <asp:Label ID="Label1" runat="server" Text="ทดสอบ" CssClass="Noshow" 
-                                           Style="margin-top: 3%; border: 1px solid transparent; border-radius: 4px;  background-color: #f2dede;
+                           <i class="glyphicon glyphicon-exclamation-sign" style="color:#b94a48; "></i> 
+                           <asp:Label ID="Label1" runat="server" Text="ทดสอบ" CssClass="Noshow" 
+                            Style="margin-top: 3%; border: 1px solid transparent; border-radius: 4px;  background-color: #f2dede;
                                            border-color: #eed3d7;color: #b94a48;"></asp:Label></div>
-                      
-                                       
                                 
-
-
-      
-                        
-
-                    
-                                      
-                                       
                   </fieldset>
                     
           </div>

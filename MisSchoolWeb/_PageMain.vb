@@ -4,10 +4,7 @@
     Public SchoolCode As String
 
     Private Sub VBPage_Load(sender As Object, e As EventArgs) Handles Me.Load
-        If Not Page.IsPostBack Then
-            Dim url As String = Request.ServerVariables("URL")
-            Dim IP As String = Request.ServerVariables("Remote_Addr")
-        End If
+
     End Sub
 
     '//-- ให้เขียน Code ที่่นี่เพราะเกิดก่อน PreInit --

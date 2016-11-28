@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="/Scripts/jquery-ui.min.js"></script>
+    <!-- <script src="/Scripts/jquery-ui.min.js"></script> -->
     <script src="/Scripts/bootstrap.min.js"></script>
     <link href="/Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
-    <link href="Scripts/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Scripts/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
 
-     <style>
+    <style>
 
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -48,6 +48,17 @@
              .rightmenu{display: none;}
          }
     </style>  
+
+    <script type="text/javascript">
+        $(function () {
+            $('ul li a').click(function () {
+                $('ul li.active').removeClass('active');
+                $(this).closest('li').addClass('active');
+            });
+        });
+
+    </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -83,8 +94,8 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                 <asp:Image ID="picTeacher" runat="server" class="img-circle"  Style="height:90px; width :auto ;" />
                                    <div><h4> <asp:Label Class=""  ID="lblUserName" runat="server" Text=""></asp:Label></h4> </div>
-                                        <div><asp:Label Class=""  ID="Label1" runat="server" Text="11111"></asp:Label></div> 
-                                        <div><asp:Label Class=""  ID="Label2" runat="server" Text="11111"></asp:Label></div> 
+                                        <div><asp:Label Class=""  ID="lblTimeIN" runat="server" Text="เวลาเข้าใช้งาน"></asp:Label></div> 
+                                        <div><asp:Label Class=""  ID="lblIP" runat="server" Text="0.0.0.0"></asp:Label></div> 
                                         <div><asp:Label Class=""  ID="Label3" runat="server" Text="11111"></asp:Label></div> 
                                         <div><asp:Label Class=""  ID="Label4" runat="server" Text="11111"></asp:Label></div> 
                                     </div>
@@ -94,8 +105,8 @@
                     </div>
                   <div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="#"><i class="glyphicon glyphicon-user"></i>ประวัติส่วนตัว </a></li>
-						<li><a href="#" target="_blank"><i class="glyphicon glyphicon-ok"></i>ข้อมูลการสอน </a></li>
+						<li class="active"><a href="Home.aspx" target="_self"><i class="glyphicon glyphicon-user"></i>ประวัติส่วนตัว </a></li>
+						<li><a href="frmReportTeach.aspx" target="_self"><i class="glyphicon glyphicon-ok"></i>ข้อมูลการสอน </a></li>
 						<li><a href="#"><i class="glyphicon glyphicon-flag"></i>Help </a></li>
 					</ul>
 				</div>

@@ -201,6 +201,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsMgData.vb" />
     <Compile Include="clsUserInfo.vb" />
     <Compile Include="App_GlobalResources\rsMain.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -216,10 +217,16 @@
     <Compile Include="clsMisClassName.vb" />
     <Compile Include="Controllers\AccountController.vb" />
     <Compile Include="Controllers\ManageController.vb" />
+    <Compile Include="frmReportTeach.aspx.designer.vb">
+      <DependentUpon>frmReportTeach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportTeach.aspx.vb">
+      <DependentUpon>frmReportTeach.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="clsMISSQL.vb" />
     <Compile Include="Home.aspx.designer.vb">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
@@ -295,15 +302,16 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>rsMain.Designer.vb</LastGenOutput>
     </Content>
+    <Content Include="frmReportTeach.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="index.aspx" />
     <Content Include="notLogin.aspx" />
     <Content Include="picTeacher\T45003.jpg" />
-    <Content Include="Scripts\Style\BJcss\bootstrap.css" />
-    <Content Include="Scripts\Style\BJcss\bootstrap.min.css" />
-    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Scripts\Style\BJcss\jquery-ui.min.css" />
-    <Content Include="Scripts\Style\Main\MIS.css" />
+    <Content Include="Style\BJcss\bootstrap.css" />
+    <Content Include="Style\BJcss\bootstrap.min.css" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Style\BJcss\jquery-ui.min.css" />
+    <Content Include="Style\Main\MIS.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="_Doc\_Doc.txt" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -355,9 +363,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.vbhtml" />
     <Content Include="Views\Shared\Lockout.vbhtml" />
     <Content Include="Views\Shared\_LoginPartial.vbhtml" />
-    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Scripts\Style\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
