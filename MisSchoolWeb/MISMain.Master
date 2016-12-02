@@ -12,7 +12,7 @@
     <!-- <script src="/Scripts/jquery-ui.min.js"></script> -->
     <script src="/Scripts/bootstrap.min.js"></script>
     <link href="/Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
-    <link href="/Scripts/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/BJcss/bootstrap.min.css" rel="stylesheet" />
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
 
     <style>
@@ -62,27 +62,23 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-
-
 <body>
-
-
     <form id="form1" runat="server">
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-      <div>
+        <%--ปุ่มเมนูบนมือถือ--%>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+              <div>
    
-    </div>
-  </div>
-</nav>
+            </div>
+          </div>
+        </nav> <%--จบปุ่มเมนูบนมือถือ--%>
 
 
 <div class="container-fluid" style="margin-top:2%">
@@ -103,25 +99,91 @@
 
                          </div>
                     </div>
-                  <div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="Home.aspx" target="_self"><i class="glyphicon glyphicon-user"></i>ประวัติส่วนตัว </a></li>
-						<li><a href="frmReportTeach.aspx" target="_self"><i class="glyphicon glyphicon-ok"></i>ข้อมูลการสอน </a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-flag"></i>Help </a></li>
-					</ul>
-				</div>
+
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class=" glyphicon glyphicon-user">
+                            </span>  ข้อมูลส่วนตัว</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="Home.aspx">ทะเบียนประวัติ</a> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="frmReportTeach.aspx">ข้อมูลการสอน</a>
+                                    </td>
+                                </tr> 
+                                  <tr>
+                                    <td>
+                                        <a href="teacherTrain.aspx">ข้อมูลการอบรม</a>
+                                    </td>
+                                </tr> 
+                            </table>
+                        </div>
+                    </div>
                 </div>
-		
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-list-alt">
+                            </span>  อาจารย์ที่ปรึกษา</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="#">เช็คการเข้าแถว</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">เช็คเวลาเรียน</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                            </span>  รายงาน</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	
-		<div class="col-md-9">
- <div>
+	<div class="col-md-9">
+    <div>
             <asp:ContentPlaceHolder ID="CB" runat="server">    
             </asp:ContentPlaceHolder> 
 
             </div>
 		</div>
 	</div>
-    </div>
+ </div> 
   
 
 

@@ -276,6 +276,13 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Startup.vb" />
+    <Compile Include="TeacherTrain.aspx.designer.vb">
+      <DependentUpon>TeacherTrain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherTrain.aspx.vb">
+      <DependentUpon>TeacherTrain.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="WebForm1.aspx.designer.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
@@ -312,6 +319,7 @@
     <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Style\BJcss\jquery-ui.min.css" />
     <Content Include="Style\Main\MIS.css" />
+    <Content Include="TeacherTrain.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="_Doc\_Doc.txt" />
     <EmbeddedResource Include="My Project\Resources.resx">

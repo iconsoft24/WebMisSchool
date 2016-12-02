@@ -9,7 +9,7 @@
     <script src="/Scripts/jquery-1.10.2.min.js"></script>
     <script src="/Scripts/jquery-ui.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
-    <link href="Scripts/Style/BJcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/BJcss/bootstrap.min.css" rel="stylesheet" />
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
      
     <style>
@@ -20,6 +20,10 @@
         @media screen and (max-width: 767px) {
             .row.content {
                 height: auto;
+            }
+            .singin{
+                width:auto;
+
             }
         }
 
@@ -49,10 +53,12 @@
   
 <div class="container-fluid text-center"" >
   <div class="row content">
-    <div class="col-sm-12 text-left" >
+    <div class="col-sm-12  col-xs-12 text-left" >
          <div class="row">
             <!-- Sign In form -->
-      <div class="col-md-4 col-md-offset-4 " style="margin-top: 3%;">
+        <div class="singin">
+
+      <div class="col-md-4 col-md-offset-4   " style="margin-top: 3%;">
       <div class="login-panel panel panel-primary">
           <div class="panel-heading" >
               <h3 class="panel-title">MIS-SCHOOL</h3>
@@ -87,7 +93,8 @@
           </div>
       </div>
       </div>
-    </div>                 
+    </div>    
+</div>             
  </div>   
 </div>
         </div>

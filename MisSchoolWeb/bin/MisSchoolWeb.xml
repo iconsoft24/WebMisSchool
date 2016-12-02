@@ -106,45 +106,126 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.Home._focusedInput">
+<member name="F:MisSchoolWeb.Home._txtTeacherPrefix">
 <summary>
-focusedInput control.
+txtTeacherPrefix control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.Home._Text2">
+<member name="F:MisSchoolWeb.Home._txtTeacherName">
 <summary>
-Text2 control.
+txtTeacherName control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.Home._Text3">
+<member name="F:MisSchoolWeb.Home._txtTeacherLName">
 <summary>
-Text3 control.
+txtTeacherLName control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.Home._Text5">
+<member name="F:MisSchoolWeb.Home._txtTeacherNickname">
 <summary>
-Text5 control.
+txtTeacherNickname control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.Home._disabledInput">
+<member name="F:MisSchoolWeb.Home._txtIDNo">
 <summary>
-disabledInput control.
+txtIDNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._txtDateBirth">
+<summary>
+txtDateBirth control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._cmdSave">
+<summary>
+cmdSave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._upModal">
+<summary>
+upModal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._lblModalTitle">
+<summary>
+lblModalTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._lblModalBody">
+<summary>
+lblModalBody control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._cmd01">
+<summary>
+cmd01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._cmd02">
+<summary>
+cmd02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.Home._cmd03">
+<summary>
+cmd03 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -307,6 +388,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:MisSchoolWeb.notLogin._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:MisSchoolWeb.TeacherTrain._TeacherTrainGV">
+<summary>
+TeacherTrainGV control.
 </summary>
 <remarks>
 Auto-generated field.
