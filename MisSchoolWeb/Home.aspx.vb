@@ -77,8 +77,6 @@ Public Class Home
         cmd01.OnClientClick = "window.location = '/Home.aspx'"
         cmd01.Text = "ตกลง"
 
-        cmd02.Visible = False
-        cmd03.Visible = False
         upModal.Update()
 
     End Sub

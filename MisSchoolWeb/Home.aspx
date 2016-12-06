@@ -60,7 +60,7 @@
         <!-- SET ของ Modal Bootstrap เริ่มจากตรงนี้ -->
                         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                         <!-- Bootstrap Modal Dialog -->
-                        <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding:10%;">
                             <div class="modal-dialog">
                                 <asp:UpdatePanel ID="upModal" runat="server" ChildrenAsTriggers="false" UpdateMode="Conditional">
                                     <ContentTemplate>
@@ -73,19 +73,15 @@
                                                 <asp:Label ID="lblModalBody" runat="server" Text=""></asp:Label>
                                             </div>
                                             <div class="modal-footer">
-                                                <%--<button id="cmd01" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" onclick="window.location = '/UserData_List.aspx'">ตกลง</button>--%>
-                                                <%-- เติมปุ่มเพิ่มอีกได้ เป็นปุ่ม ASP.Net ก็ได้ --%>
+
                                                 <asp:Button ID="cmd01" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" runat="server" Text="cmd01" />
-                                                <asp:Button ID="cmd02" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" runat="server" Text="cmd02" />
-                                                <asp:Button ID="cmd03" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" runat="server" Text="cmd03" />
-                                            </div>
+                                                 </div>
                                         </div>
                                     </ContentTemplate>
                                 </asp:UpdatePanel>
                             </div>
                         </div>
-                        <!-- Bootstrap Modal Dialog -->
-                        <!-- SET ของ Modal Bootstrap จบตรงนี้ -->
+
         
     </div>
     </div>

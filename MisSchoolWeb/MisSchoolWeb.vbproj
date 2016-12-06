@@ -283,6 +283,13 @@
       <DependentUpon>TeacherTrain.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="TeacherTraining.aspx.designer.vb">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherTraining.aspx.vb">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="WebForm1.aspx.designer.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
@@ -316,10 +323,12 @@
     <Content Include="picTeacher\T45003.jpg" />
     <Content Include="Style\BJcss\bootstrap.css" />
     <Content Include="Style\BJcss\bootstrap.min.css" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Style\BJcss\jquery-ui.min.css" />
     <Content Include="Style\Main\MIS.css" />
     <Content Include="TeacherTrain.aspx" />
+    <Content Include="TeacherTraining.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="_Doc\_Doc.txt" />
     <EmbeddedResource Include="My Project\Resources.resx">

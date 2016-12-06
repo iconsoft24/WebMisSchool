@@ -11,61 +11,115 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Home
+Partial Public Class TeacherTraining
     
     '''<summary>
-    '''txtTeacherPrefix control.
+    '''lblterm control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTeacherPrefix As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblterm As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtTeacherName control.
+    '''DTerm control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTeacherName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DTerm As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtTeacherLName control.
+    '''lblYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTeacherLName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lblYear As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtTeacherNickname control.
+    '''DYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTeacherNickname As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtIDNo control.
+    '''Label1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtIDNo As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''txtDateBirth control.
+    '''txtDateCourse control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDateBirth As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDateCourse As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''lblCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblCourse As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtCourse As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''lblAddressCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAddressCourse As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtAddressCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtAddressCourse As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''lblTotalTimeCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTotalTimeCourse As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtTotalTimeCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtTotalTimeCourse As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''cmdSave control.
@@ -120,13 +174,4 @@ Partial Public Class Home
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cmd01 As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''GV1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GV1 As Global.System.Web.UI.WebControls.GridView
 End Class

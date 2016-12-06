@@ -10,9 +10,11 @@
 
     <script src="/Scripts/jquery-1.10.2.min.js"></script>
     <!-- <script src="/Scripts/jquery-ui.min.js"></script> -->
-    <script src="/Scripts/bootstrap.min.js"></script>
-    <link href="/Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
+    <script src="/Scripts/bootstrap.min.js"></script>   
+    <script src="Scripts/jquery-ui.min.js"></script>
     <link href="Style/BJcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
+
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
 
     <style>
@@ -57,6 +59,16 @@
             });
         });
 
+
+
+
+        $(function () {
+             $(".date").datepicker({
+                 dateFormat: "dd/mm/yy",
+             monthNames: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
+         });
+         });
+     
     </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
