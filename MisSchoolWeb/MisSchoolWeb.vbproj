@@ -276,6 +276,13 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Startup.vb" />
+    <Compile Include="Studentinrow.aspx.designer.vb">
+      <DependentUpon>Studentinrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studentinrow.aspx.vb">
+      <DependentUpon>Studentinrow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="TeacherTrain.aspx.designer.vb">
       <DependentUpon>TeacherTrain.aspx</DependentUpon>
     </Compile>
@@ -321,6 +328,7 @@
     <Content Include="index.aspx" />
     <Content Include="notLogin.aspx" />
     <Content Include="picTeacher\T45003.jpg" />
+    <Content Include="Studentinrow.aspx" />
     <Content Include="Style\BJcss\bootstrap.css" />
     <Content Include="Style\BJcss\bootstrap.min.css" />
     <Content Include="Scripts\jquery-ui.min.js" />

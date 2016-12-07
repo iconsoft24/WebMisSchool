@@ -2,39 +2,45 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="CB" runat="server">
-    
 
+
+  </div>
 
     <%--แสดงข้อมูล--%>
     <asp:GridView ID="TeacherTrainGV" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3"   >
     
            <Columns>
-                  <asp:BoundField DataField="termyear" HeaderText="ปี" >
-<ControlStyle CssClass="gv1"></ControlStyle>
+                      <%--ปีการศึกษา--%>
+                  <asp:BoundField DataField="termyear" HeaderText="ปี" ><ControlStyle CssClass="gv1"></ControlStyle>
                   <HeaderStyle CssClass="gv1" HorizontalAlign="Center" VerticalAlign="Middle" Width="80px" />
                   <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" Width="80px" />
                   </asp:BoundField>
-               <%--   <asp:BoundField DataField="year" HeaderText="ปี"/>--%>
-                  <asp:BoundField DataField="Course" HeaderText="หลักสูตรที่อบรม"  >
-<ControlStyle CssClass="gv1"></ControlStyle>
+                    <%--หลักสูตรที่อบรม--%>
+                  <asp:BoundField DataField="Course" HeaderText="หลักสูตรที่อบรม"  ><ControlStyle CssClass="gv1"></ControlStyle>
+                  <HeaderStyle HorizontalAlign="Center" CssClass="gv1" VerticalAlign="Middle" Width="50%" />
+                  </asp:BoundField>
+                    <%--สถานที่อบรม--%>
+                  <asp:BoundField DataField="AddressCourse" HeaderText="สถานที่อบรม"  ><ControlStyle CssClass="gv1"></ControlStyle>
                   <HeaderStyle HorizontalAlign="Center" />
                   </asp:BoundField>
-                  <asp:BoundField DataField="AddressCourse" HeaderText="สถานที่อบรม"  >
-<ControlStyle CssClass="gv1"></ControlStyle>
-                  <HeaderStyle HorizontalAlign="Center" />
+                    <%--วันที่อบรม--%>
+                  <asp:BoundField DataField="DateCourse" HeaderText="วันที่อบรม" ><ControlStyle CssClass="gv1"></ControlStyle>
+                  <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                  <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                   </asp:BoundField>
-                  <asp:BoundField DataField="DateCourse" HeaderText="วันที่อบรม" >
-<ControlStyle CssClass="gv1"></ControlStyle>
-                  <HeaderStyle HorizontalAlign="Center" />
-                  </asp:BoundField>
+                    <%--จำนวนชั่วโมง--%>
                   <asp:BoundField DataField="TotalTimeCourse" HeaderText="จำนวนชั่วโมง"  >
-
-<ControlStyle CssClass="gv1"></ControlStyle>
-                  <HeaderStyle HorizontalAlign="Center" />
+                  <ControlStyle CssClass="gv1"></ControlStyle>
+                  <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                  <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                   </asp:BoundField>
 
-                 <asp:CommandField  EditText="แก้ไข"  UpdateText="ตกลง" CancelText ="ยกเลิก" ButtonType="Button"  ShowEditButton="True"   /> 
-          
+                  <asp:TemplateField >
+                    <ItemTemplate >
+                      <asp:Button ID="Button2" runat="server" Text="แก้ไข" Commandname="Edit"   OnClientClick ="window.location = '/TeacherTraining.aspx'"/>
+                    </ItemTemplate>
+                    <%-- <EditItemTemplate > xxx</EditItemTemplate>--%>
+                </asp:TemplateField>
             </Columns>
 
   

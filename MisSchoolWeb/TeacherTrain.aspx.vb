@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class TeacherTrain
-    Inherits System.Web.UI.Page
+    Inherits _PageMainSec
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Page.IsPostBack Then
@@ -25,25 +25,8 @@ Public Class TeacherTrain
 
     End Sub
 
-    Private Sub TeacherTrainGV_RowUpdating(sender As Object, e As GridViewUpdateEventArgs) Handles TeacherTrainGV.RowUpdating
+    Private Sub TeacherTrainGV_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles TeacherTrainGV.RowEditing
 
     End Sub
-
-    Protected Sub TeacherTrainGV_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MyBaseGV.SelectedIndexChanged
-
-    End Sub
-
-    Protected Sub TeacherTrainGV_SelectedIndexChanged1(sender As Object, e As EventArgs) Handles MyBaseGV.SelectedIndexChanged
-
-    End Sub
-
-
-
-    'Private Sub TeacherTrainGV_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles TeacherTrainGV.PageIndexChanging
-    '    TeacherTrainGV.PageIndex = e.NewPageIndex
-    '    showData()
-    'End Sub
-
-
 End Class
 
