@@ -16,9 +16,12 @@
     <link href="Style/BJcss/jquery-ui.min.css" rel="stylesheet" />
 
     <link href="/Style/Main/MIS.css" rel="stylesheet" />
-
+   
     <style>
-
+    input[type="date"]::-webkit-inner-spin-button{
+            display: none;
+            -webkit-appearance: none;
+        }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
@@ -156,7 +159,7 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <a href="#">เช็คการเข้าแถว</a>
+                                        <a href="studentinrow.aspx">เช็คการเข้าแถว</a>
                                     </td>
                                 </tr>
                                 <tr>

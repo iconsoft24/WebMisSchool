@@ -25,8 +25,6 @@ Public Class TeacherTrain
 
     End Sub
 
-    Private Sub TeacherTrainGV_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles TeacherTrainGV.RowEditing
 
-    End Sub
 End Class
 
