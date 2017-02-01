@@ -30,5 +30,5 @@ Date:<asp:TextBox ID="dateinput" runat="server" TextMode="Date"></asp:TextBox>
     <div> <asp:Button ID="Button1" runat="server" Text="Button"  /></div>
     <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
     <asp:Label ID="lbldateinput" runat="server" Text="Label"></asp:Label>
-
+    <%--  --%>
 </asp:Content>
