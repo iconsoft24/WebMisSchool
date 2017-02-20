@@ -1,18 +1,32 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MISMain.Master" CodeBehind="Studentinrow.aspx.vb" Inherits="MisSchoolWeb.Studentinrow" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<%--<script>
-  $( function() {
-      $("#dateinput").datepicker();
-      $("#dateinput").datepicker("setDate", new Date());
-      dateFormat: "dd/mm/yy";
-  } );
-  </script>--%>
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#dateinput").datepicker({
+                dateFormat: "dd/mm/yy",
+                monthNames: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
+                dayNamesMin:['อา','จ','อ','พ','พฤ','ศ','ส']
+            });
+            $("#dateinput").datepicker("setDate", new Date());
+        });
+
+
+  //      {
+  //    $("#dateinput").datepicker();
+  //    $("#dateinput").datepicker("setDate", new Date());
+  //    dateFormat: "dd/mm/yy";
+  //} );
+        </script>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="CB" runat="server">
 
-Date:<asp:TextBox ID="dateinput" runat="server" TextMode="Date"></asp:TextBox>
+Date:<asp:TextBox ID="dateinput"  runat="server"   ClientIDMode ="Static"></asp:TextBox>
+
+
     <asp:GridView ID="stdRowGV" runat="server" AutoGenerateColumns="False">
         <Columns>
             <asp:TemplateField>

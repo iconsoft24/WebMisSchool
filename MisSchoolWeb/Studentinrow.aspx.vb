@@ -46,9 +46,6 @@ Public Class Studentinrow
         stdRowGV.DataBind()
     End Sub
 
-    Private Sub stdRowGV_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles stdRowGV.RowCommand
-
-    End Sub
 
 
 
@@ -56,7 +53,7 @@ Public Class Studentinrow
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim strSql As String = "", sqlConn As New SqlConnection(Resources.rsMain.strConn)
         Dim data As String = ""
-
+        deletedata()
 
         For Each row As GridViewRow In stdRowGV.Rows
             If row.RowType = DataControlRowType.DataRow Then
@@ -78,6 +75,19 @@ Public Class Studentinrow
         '
     End Sub
 
+    Private Sub deletedata()
+        Dim strSql As String = "", sqlConn As New SqlConnection(Resources.rsMain.strConn)
+        strSql = " DELETE from  GovernMent.dbo.tblInputStudentNotInRow
+                    where DateInput ='" & dateinput.Text & "' and 
+                    StdNo in (select StdNo from tabain.dbo.tblstudentroom 
+                    where LavelNo+DepartNo+RoundNo+[Year]+Room  in 
+                    (Select LavelNo+DepartNo+RoundNo+[Year]+Room From GovernMent.Dbo.tblTeacherCounsel
+                    Where TeacherNo = '" & Session("iuser").teacherno & "' AND sTerm= '2' AND sYear = '2559') ) "
+        sqlConn.Open()
+        Dim sqlCmd As New SqlCommand(strSql, sqlConn)
+        sqlCmd.ExecuteNonQuery()
+        sqlConn.Close()
 
+    End Sub
 
 End Class
