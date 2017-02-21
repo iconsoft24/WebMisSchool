@@ -83,6 +83,21 @@ Public Class MgData
         End Try
     End Function
 
+    Public Function GetDataTable(strSql As String, istrConn As String) As DataTable
+        Try
+            DA = New SqlDataAdapter(strSql, istrConn)
+            Dim DT As New DataTable
+            DA.Fill(DT)
+            Return DT
+        Catch ex As Exception
+            m_ErrorMessage = ex.Message
+            If m_ShowError Then
+                MsgBox(ex.Message, 48, ProjectName)
+            End If
+            Return Nothing
+        End Try
+    End Function
+
     Public Function GetDataSet(strSql As String) As DataSet
         Try
             DA = New SqlDataAdapter(strSql, strCon)

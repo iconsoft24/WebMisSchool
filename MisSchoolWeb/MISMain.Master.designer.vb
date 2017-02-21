@@ -59,6 +59,15 @@ Partial Public Class MISMain
     Protected WithEvents lblTimeIN As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblTermYear control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTermYear As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''lblIP control.
     '''</summary>
     '''<remarks>
@@ -66,15 +75,6 @@ Partial Public Class MISMain
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblIP As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Label3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Label4 control.

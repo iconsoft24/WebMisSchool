@@ -22,7 +22,7 @@ Public Class Home
         '                        " LEFT JOIN Personal.dbo.tblHisDetail AS B ON a.HisNo=b.HisNo " &
         '                        " LEFT JOIN Personal.dbo.tblDintComeType AS C ON b.DintComeTypeNo = c.DintComeTypeNo " &
         '                        " WHERE CONVERT(varchar(10),A.DateHis,102) = '2016.09.27' AND B.TeacherNo = 'T45003' "
-        'Dim M1 As New MgData(modConn.strCon)
+        'Dim M1 As New MgData(modConn.pstrConn)
         'Dim DT As DataTable = M1.GetDataTable(strSql)
 
         'If DT.Rows.Count > 0 Then

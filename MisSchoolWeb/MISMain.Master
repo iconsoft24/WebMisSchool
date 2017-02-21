@@ -106,8 +106,8 @@
                                 <asp:Image ID="picTeacher" runat="server" class="img-circle"  Style="height:90px; width :auto ;" />
                                    <div><h4> <asp:Label Class=""  ID="lblUserName" runat="server" Text=""></asp:Label></h4> </div>
                                         <div><asp:Label Class=""  ID="lblTimeIN" runat="server" Text="เวลาเข้าใช้งาน"></asp:Label></div> 
-                                        <div><asp:Label Class=""  ID="lblIP" runat="server" Text="0.0.0.0"></asp:Label></div> 
-                                        <div><asp:Label Class=""  ID="Label3" runat="server" Text="11111"></asp:Label></div> 
+                                        <div><asp:Label Class=""  ID="lblTermYear" runat="server" Text="0.0.0.0"></asp:Label></div> 
+                                        <div><asp:Label Class=""  ID="lblIP" runat="server" Text="11111"></asp:Label></div> 
                                         <div><asp:Label Class=""  ID="Label4" runat="server" Text="11111"></asp:Label></div> 
                                     </div>
                                 </div>

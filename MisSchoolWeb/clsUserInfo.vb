@@ -13,6 +13,12 @@ Public Class clsUserInfo
 
     Public FirstLogin As Date = Now
 
+    Public TermTabain, YearTabain, TermYearTabain As String
+
+    Sub New()
+        FindTermYearTabain()
+    End Sub
+
     Public Function CheckLogin() As Boolean
 
         If m_User = "" Or m_Password = "" Then
@@ -27,10 +33,10 @@ Public Class clsUserInfo
         End If
 
         Dim strSql As String = String.Format(Resources.rsMain.checkUser, m_User, m_Password)
-        Dim M1 As New MgData(modConn.strCon)
+        Dim M1 As New MgData(modConn.pstrConn)
         Dim DT As DataTable = M1.GetDataTable(strSql)
 
-        'Dim DA As New SqlDataAdapter(strSql, modConn.strCon)
+        'Dim DA As New SqlDataAdapter(strSql, modConn.pstrConn)
         'Dim DT As New DataTable
         'DA.Fill(DT)
 
@@ -99,5 +105,20 @@ Public Class clsUserInfo
             _IP = value
         End Set
     End Property
+
+    '//-- หา ปีการศึกษา ในงานทะเบียน --
+    Private Sub FindTermYearTabain()
+        Dim strSql As String = "SELECT sTerm AS Term , sYear AS [Year], STerm + '/' +  SYear AS TermYear " &
+                              " FROM Tabain.dbo.tblSetSystemTabain "
+        Dim M1 As New MgData
+
+        Dim dt As DataTable = M1.GetDataTable(strSql, modConn.pstrConn)
+
+        If dt.Rows.Count > 0 Then
+            TermTabain = dt(0)!Term
+            YearTabain = dt(0)!Year
+            TermYearTabain = dt(0)!TermYear
+        End If
+    End Sub
 
 End Class

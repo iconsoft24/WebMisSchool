@@ -48,7 +48,7 @@ Public Class WebShowStudent
         With GV1
             Dim strStdNo As String = .DataKeys.Item(e.RowIndex).Value
 
-            Dim strconn As String = modConn.strCon
+            Dim strconn As String = modConn.pstrConn
 
             Dim cn As New SqlConnection(strconn)
             Dim strSql As String = Resources.rsMain.StudentDel
@@ -88,7 +88,7 @@ Public Class WebShowStudent
             " ,LName = '" & txtLname.Text & "' " &
             " WHERE StdNoRef = '" & strStdNo & "'"
 
-            Dim Cn As New SqlConnection(modConn.strCon)
+            Dim Cn As New SqlConnection(modConn.pstrConn)
             Dim cmd = New SqlCommand(strSQL, Cn)
 
             Cn.Open()
@@ -107,7 +107,7 @@ Public Class WebShowStudent
         '             Where lavelNo+departNo+roundno+year+room = '" & strClassNo & "')"
 
         Dim strSQL As String = String.Format(Resources.rsMain.Student, strClassNo).ToString
-        Dim DA As New SqlDataAdapter(strSQL, modConn.strCon)
+        Dim DA As New SqlDataAdapter(strSQL, modConn.pstrConn)
         Dim DT As New DataTable
         DA.Fill(DT)
 
@@ -130,7 +130,7 @@ Public Class WebShowStudent
     'Private Sub ShowData(ClassNo As String)
 
     '    Dim strSql As String = String.Format(Resources.rsMain.Student, ClassNo).ToString
-    '    Dim strConn As String = modConn.strCon
+    '    Dim strConn As String = modConn.pstrConn
 
     '    Dim DA As New SqlDataAdapter(strSql, strConn)
     '    Dim DT As New DataTable

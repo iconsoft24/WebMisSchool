@@ -20,7 +20,7 @@ Public Class WebForm1
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim M1 As New MgData(modConn.strCon)
+        Dim M1 As New MgData(modConn.pstrConn)
 
         Dim strsql As String = "Select Top 10 Fname From Tabain.dbo.tblStudent "
         Dim DT As DataTable = M1.GetDataTable(strsql)

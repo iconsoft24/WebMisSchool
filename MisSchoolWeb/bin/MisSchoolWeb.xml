@@ -331,18 +331,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.MISMain._lblIP">
+<member name="F:MisSchoolWeb.MISMain._lblTermYear">
 <summary>
-lblIP control.
+lblTermYear control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:MisSchoolWeb.MISMain._Label3">
+<member name="F:MisSchoolWeb.MISMain._lblIP">
 <summary>
-Label3 control.
+lblIP control.
 </summary>
 <remarks>
 Auto-generated field.

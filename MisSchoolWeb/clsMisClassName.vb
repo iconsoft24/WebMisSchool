@@ -56,7 +56,7 @@ Public Class clsMisClassName
     Public Function LavelName(Optional iFull As Boolean = False) As String
         Dim strSql As String = String.Format(Resources.rsMain.tblLavel, Me.LavelNo)
         Dim strLavelName As String
-        Dim strConn As String = modConn.strCon
+        Dim strConn As String = modConn.pstrConn
 
         Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
@@ -76,7 +76,7 @@ Public Class clsMisClassName
     Public Function DepartName() As String
         Dim strSql As String = String.Format(Resources.rsMain.tblDepart, Me.DepartNo)
         Dim strDepartName As String
-        Dim strConn As String = modConn.strCon
+        Dim strConn As String = modConn.pstrConn
 
         Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
@@ -92,7 +92,7 @@ Public Class clsMisClassName
     Public Function RoundName() As String
         Dim strSql As String = String.Format(Resources.rsMain.tblDepart, Me.DepartNo)
         Dim strRoundName As String
-        Dim strConn As String = modConn.strCon
+        Dim strConn As String = modConn.pstrConn
 
         Dim MisSql As New MgData(strConn)
         Dim DT As DataTable = MisSql.GetDataTable(strSql)
