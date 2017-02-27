@@ -13,30 +13,24 @@ Public Class Studentinrow
         End If
 
     End Sub
+
     Private Sub showdata()
 
-        'Dim strSql As String = " Select Case SR.no_room,n.StdNo ,p.PrefixNameFull+s.FName+'  '+s.Lname as stdname from Tabain.dbo.tblStudentRoom sr
-        '                            INNER Join Tabain.Dbo.tblStudentNumber N ON n.StdNo = sr.StdNo
-        '                            inner Join Tabain.Dbo.tblStudent S  on s.StdNoRef =s.StdNoRef 
-        '                            Left Join BaseData.Dbo.tblPrefix P ON S.PrefixNo = P.PrefixNo  
-        '                            where SR.LavelNo + SR.DepartNo + SR.RoundNo + SR.[Year] + SR.Room  in 
-        '                            (Select LavelNo+DepartNo+RoundNo+[Year]+Room From GovernMent.Dbo.tblTeacherCounsel
-        '                            Where TeacherNo = '" & Session("iuser").teacherno & "' AND sTerm = '2' AND sYear = '2559')
-        '                            ORDER BY SR.No_Room,SR.StdNo"
+        Dim dtClassTeacherCon As DataTable = CType(Session("dtteacher"), DataTable)
 
+        Dim strWhere As String
 
-        Dim strsql As String = "Select R.no_room,n.StdNo ,p.PrefixNameFull+s.FName+'  '+s.Lname as stdname
-                                    From Tabain.Dbo.tblStudent S  
-                                    INNER JOIN Tabain.Dbo.tblStudentNumber N ON S.StdNoRef = N.StdNoRef  
-                                    INNER JOIN Tabain.Dbo.tblStudentRoom R On N.StdNo = R.StdNo  
-                                    LEFT JOIN BaseData.Dbo.tblPrefix P ON S.PrefixNo = P.PrefixNo  
-                                    INNER JOIN Tabain.Dbo.tblStdStatus T ON R.StatusNo = T.StatusNo  
-                                     where r.LavelNo+r.DepartNo+r.RoundNo+r.[Year]+r.Room  in 
-                                    (Select LavelNo+DepartNo+RoundNo+[Year]+Room From GovernMent.Dbo.tblTeacherCounsel
-                                    Where TeacherNo = '" & Session("iuser").teacherno & "' AND sTerm = '2' AND sYear = '2559')
-                                    order by R.No_Room,R.StdNo"
+        'For Each dr As DataRow In dtClassTeacherCon.Rows
+        '    strWhere = "r.LavelNo+r.DepartNo+r.RoundNo+r.[Year]+r.Room = '" & dr!classNo & "'"
+        'Next
 
-
+        Dim strsql As String = "Select R.no_room,n.StdNo ,p.PrefixNameFull+s.FName+'  '+s.Lname as stdname " &
+                                    " From Tabain.Dbo.tblStudent S " &
+                                    " INNER JOIN Tabain.Dbo.tblStudentNumber N ON S.StdNoRef = N.StdNoRef " &
+                                    " INNER JOIN Tabain.Dbo.tblStudentRoom R On N.StdNo = R.StdNo " &
+                                    " LEFT JOIN BaseData.Dbo.tblPrefix P ON S.PrefixNo = P.PrefixNo " &
+                                    " INNER JOIN Tabain.Dbo.tblStdStatus T ON R.StatusNo = T.StatusNo  " &
+                                    " where r.LavelNo+r.DepartNo+r.RoundNo+r.[Year]+r.Room IN (" & CType(Session("iTeacherCounsel"), clsFindTeacherCounsel).SqlWhereClassNo & ")"
 
 
         Dim Da As New SqlDataAdapter(strsql, Resources.rsMain.strConn)

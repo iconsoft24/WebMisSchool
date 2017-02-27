@@ -201,6 +201,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsFindTeacherCounsel.vb" />
     <Compile Include="clsMgData.vb" />
     <Compile Include="clsUserInfo.vb" />
     <Compile Include="App_GlobalResources\rsMain.Designer.vb">

@@ -15,6 +15,7 @@ Public Class index
     Protected Sub cmdLogin_Click(sender As Object, e As EventArgs) Handles cmdLogin.Click
 
         Dim iUser As New clsUserInfo
+
         Dim IP As String = Request.ServerVariables("Remote_Addr")
         Dim url As String = Request.ServerVariables("URL")
 
@@ -23,7 +24,18 @@ Public Class index
         iUser.IP = IP
 
         If iUser.CheckLogin Then
+
             Session("iUser") = iUser
+
+            Dim M1 As New clsFindTeacherCounsel(iUser.TeacherNo, iUser.TermTabain, iUser.YearTabain)
+
+            Dim dt As DataTable = M1.TeacherCounselClass
+
+            Session("dtTeacher") = dt
+            Session("iTeacherCounsel") = M1
+
+
+
             Response.Redirect("Home.aspx")
         Else
             Session("iUser") = Nothing
